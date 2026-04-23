@@ -1,6 +1,6 @@
 ---
 created: 2026-04-23 13:28:25 +09:00
-updated: 2026-04-23 15:47:18 +09:00
+updated: 2026-04-23 16:10:37 +09:00
 ---
 # ghostty-for-cmux
 
@@ -42,7 +42,6 @@ chmod +x install.sh
 | 항목 | 값 | 설명 |
 |---|---|---|
 | 폰트 | JetBrains Mono 14pt | 리가처 활성 (`calt`, `liga`) |
-| 폰트 웨이트 | SemiBold (`wght=600`) | `font-variation`으로 가변 폰트 웨이트 지정 |
 | 폰트 두께 보강 | 켜짐 (strength=32) | `font-thicken` 최소 강도로 가독성 보강 |
 | 한글 폰트 | Pretendard Variable | `font-codepoint-map`으로 유니코드 범위 매핑 |
 | 줄 높이 | +15% | `adjust-cell-height`로 가독성 확보 |
