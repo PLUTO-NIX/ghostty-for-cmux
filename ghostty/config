@@ -1,0 +1,85 @@
+# === Theme ==================================================================
+theme = cursor-dark
+
+# === Font ===================================================================
+font-family = JetBrains Mono
+font-size = 14
+font-thicken = false
+adjust-cell-height = 15%
+
+# 코딩 리가처 (=>, !==, === 등)
+font-feature = calt
+font-feature = liga
+
+# 한글 → Pretendard Variable
+font-codepoint-map = U+AC00-U+D7AF=Pretendard Variable
+font-codepoint-map = U+3130-U+318F=Pretendard Variable
+font-codepoint-map = U+1100-U+11FF=Pretendard Variable
+
+# === Cursor =================================================================
+# 블록 커서, 깜빡임 없음 — 분할 패널에서 위치 파악이 쉬움
+cursor-style = block
+cursor-style-blink = false
+cursor-color = #f5e0dc
+cursor-opacity = 0.9
+adjust-cursor-thickness = 2
+
+# === Selection ==============================================================
+selection-background = #303030
+selection-foreground = #ffffff
+
+# === Readability ============================================================
+bold-is-bright = true
+minimum-contrast = 1.1
+
+
+# === Window & Padding =======================================================
+# 텍스트가 가장자리에 붙지 않도록 여백 확보
+window-padding-x = 16
+window-padding-y = 12
+window-padding-balance = true
+window-padding-color = extend
+
+# 기본 창 크기
+window-height = 35
+window-width = 120
+
+# 투명 타이틀바 — cmux 크롬과 자연스럽게 통합
+macos-titlebar-style = transparent
+window-theme = dark
+
+# cmux 자체 탭을 쓰므로 Ghostty 탭바 숨김
+window-show-tab-bar = never
+window-save-state = always
+
+# === Split Panes ============================================================
+# 비활성 패널 50% 불투명도 + 어두운 배경 채우기
+unfocused-split-opacity = 0.5
+split-divider-color = #45475a
+
+# === Resize Overlay =========================================================
+# 리사이즈 시 크기 표시 — 우하단에 0.5초간
+resize-overlay = after-first
+resize-overlay-position = bottom-right
+resize-overlay-duration = 500ms
+
+# === Scrollback =============================================================
+# 에이전트 출력이 길어질 때를 대비한 충분한 버퍼
+scrollback-limit = 50000
+
+# === Clipboard ==============================================================
+copy-on-select = clipboard
+clipboard-trim-trailing-spaces = true
+
+# === macOS ==================================================================
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 5
+
+# === Keybindings ============================================================
+# 단어 단위 이동 (Option + 화살표)
+keybind = alt+left=esc:b
+keybind = alt+right=esc:f
+
+# 단어 삭제 (Option + Backspace)
+keybind = alt+backspace=text:\x17
