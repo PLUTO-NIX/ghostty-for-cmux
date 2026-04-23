@@ -4,8 +4,11 @@ theme = cursor-dark
 # === Font ===================================================================
 font-family = JetBrains Mono
 font-size = 14
-font-thicken = false
+font-thicken = true
+font-thicken-strength = 32
 adjust-cell-height = 15%
+font-variation = wght=600
+font-variation-bold = wght=700
 
 # 코딩 리가처 (=>, !==, === 등)
 font-feature = calt

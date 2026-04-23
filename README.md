@@ -1,6 +1,6 @@
 ---
 created: 2026-04-23 13:28:25 +09:00
-updated: 2026-04-23 13:28:56 +09:00
+updated: 2026-04-23 15:47:18 +09:00
 ---
 # ghostty-for-cmux
 
@@ -42,6 +42,8 @@ chmod +x install.sh
 | 항목 | 값 | 설명 |
 |---|---|---|
 | 폰트 | JetBrains Mono 14pt | 리가처 활성 (`calt`, `liga`) |
+| 폰트 웨이트 | SemiBold (`wght=600`) | `font-variation`으로 가변 폰트 웨이트 지정 |
+| 폰트 두께 보강 | 켜짐 (strength=32) | `font-thicken` 최소 강도로 가독성 보강 |
 | 한글 폰트 | Pretendard Variable | `font-codepoint-map`으로 유니코드 범위 매핑 |
 | 줄 높이 | +15% | `adjust-cell-height`로 가독성 확보 |
 | 커서 | 블록, 깜빡임 없음 | 로즈워터 색상 (`#f5e0dc`) |
@@ -61,12 +63,12 @@ chmod +x install.sh
 
 ### cursor-dark 테마 (`ghostty/themes/cursor-dark`)
 
-[Cursor IDE](https://cursor.com) 다크 테마를 포팅한 커스텀 테마.
+[Cursor IDE](https://cursor.com) 다크 테마 기반 커스텀 테마.
 
 | 요소 | 색상 |
 |---|---|
-| 배경 | `#141414` |
-| 전경 | `#ffffff` |
+| 배경 | `#131313` |
+| 전경 | `#e6e6e6` |
 | 커서 | `#ffffff` |
 | 선택 영역 | `#303030` |
 
